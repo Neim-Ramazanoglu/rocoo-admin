@@ -17,9 +17,9 @@ class TotalProfit extends Component {
                 colors: [
                     function ({ value, seriesIndex, dataPointIndex, w }) {
                         if (value > 40) {
-                            return "#05c3fb";
+                            return "#00BBF2";
                         } else {
-                            return "#fff";
+                            return "#AAECFF";
                         }
                     }
                 ],
@@ -41,13 +41,21 @@ class TotalProfit extends Component {
                 stroke: {
                     curve: 'smooth',
                     width: 1,
-                    colors: ["#05c3fb"]
+                    colors: [
+                        function ({ value, seriesIndex, dataPointIndex, w }) {
+                            if (value > 40) {
+                                return "#00BBF2"
+                            } else {
+                                return "#AAECFF"
+                            }
+                        }
+                    ]
 
                 },
                 plotOptions: {
                     bar: {
                         borderRadius: 2,
-                        columnWidth: 25,
+                        columnWidth: 35,
                     },
                 },
 

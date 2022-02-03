@@ -10,97 +10,6 @@ function Body() {
         <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12">
 
             <div className="row">
-
-                <div className="col-lg-6 col-md-12 col-sm-12 col-xl-3">
-
-                    <div className="card overflow-hidden">
-
-                        <div className="card-body">
-
-                            <div className="d-flex">
-
-                                <div className="mt-2">
-
-                                    <h6 className="">Total Users</h6>
-                                    <h2 className="mb-0 number-font">44,278</h2>
-                                </div>
-                                <div className="ms-auto">
-
-                                    <div className="chart-wrapper mt-1">
-                                        <div
-                                            className="chartjs-size-monitor"
-                                            style={{
-                                                position: "absolute",
-                                                inset: 0,
-                                                overflow: "hidden",
-                                                pointerEvents: "none",
-                                                visibility: "hidden",
-                                                zIndex: -1
-                                            }}
-                                        >
-                                            <div
-                                                className="chartjs-size-monitor-expand"
-                                                style={{
-                                                    position: "absolute",
-                                                    left: 0,
-                                                    top: 0,
-                                                    right: 0,
-                                                    bottom: 0,
-                                                    overflow: "hidden",
-                                                    pointerEvents: "none",
-                                                    visibility: "hidden",
-                                                    zIndex: -1
-                                                }}
-                                            >
-                                                <div
-                                                    style={{
-                                                        position: "absolute",
-                                                        width: 1000000,
-                                                        height: 1000000,
-                                                        left: 0,
-                                                        top: 0
-                                                    }}
-                                                />
-                                            </div>
-                                            <div
-                                                className="chartjs-size-monitor-shrink"
-                                                style={{
-                                                    position: "absolute",
-                                                    left: 0,
-                                                    top: 0,
-                                                    right: 0,
-                                                    bottom: 0,
-                                                    overflow: "hidden",
-                                                    pointerEvents: "none",
-                                                    visibility: "hidden",
-                                                    zIndex: -1
-                                                }}
-                                            >
-                                                <div
-                                                    style={{
-                                                        position: "absolute",
-                                                        width: "200%",
-                                                        height: "200%",
-                                                        left: 0,
-                                                        top: 0
-                                                    }}
-                                                />
-                                            </div>
-                                        </div>
-                                        <TotalCost />
-
-                                    </div>
-                                </div>
-                            </div>
-                            <span className="text-muted fs-12">
-                                <span className="text-secondary">
-                                    <i className="fe fe-arrow-up-circle  text-secondary" /> 5%
-                                </span>
-                                Last week
-                            </span>
-                        </div>
-                    </div>
-                </div>
                 <div className="col-lg-6 col-md-12 col-sm-12 col-xl-3">
 
                     <div className="card overflow-hidden">
@@ -192,7 +101,96 @@ function Body() {
                         </div>
                     </div>
                 </div>
+                <div className="col-lg-6 col-md-12 col-sm-12 col-xl-3">
 
+                    <div className="card overflow-hidden">
+
+                        <div className="card-body">
+
+                            <div className="d-flex">
+
+                                <div className="mt-2">
+
+                                    <h6 className="">Total Users</h6>
+                                    <h2 className="mb-0 number-font">44,278</h2>
+                                </div>
+                                <div className="ms-auto">
+
+                                    <div className="chart-wrapper mt-1">
+                                        <div
+                                            className="chartjs-size-monitor"
+                                            style={{
+                                                position: "absolute",
+                                                inset: 0,
+                                                overflow: "hidden",
+                                                pointerEvents: "none",
+                                                visibility: "hidden",
+                                                zIndex: -1
+                                            }}
+                                        >
+                                            <div
+                                                className="chartjs-size-monitor-expand"
+                                                style={{
+                                                    position: "absolute",
+                                                    left: 0,
+                                                    top: 0,
+                                                    right: 0,
+                                                    bottom: 0,
+                                                    overflow: "hidden",
+                                                    pointerEvents: "none",
+                                                    visibility: "hidden",
+                                                    zIndex: -1
+                                                }}
+                                            >
+                                                <div
+                                                    style={{
+                                                        position: "absolute",
+                                                        width: 1000000,
+                                                        height: 1000000,
+                                                        left: 0,
+                                                        top: 0
+                                                    }}
+                                                />
+                                            </div>
+                                            <div
+                                                className="chartjs-size-monitor-shrink"
+                                                style={{
+                                                    position: "absolute",
+                                                    left: 0,
+                                                    top: 0,
+                                                    right: 0,
+                                                    bottom: 0,
+                                                    overflow: "hidden",
+                                                    pointerEvents: "none",
+                                                    visibility: "hidden",
+                                                    zIndex: -1
+                                                }}
+                                            >
+                                                <div
+                                                    style={{
+                                                        position: "absolute",
+                                                        width: "200%",
+                                                        height: "200%",
+                                                        left: 0,
+                                                        top: 0
+                                                    }}
+                                                />
+                                            </div>
+                                        </div>
+                                        <TotalCost />
+
+                                    </div>
+                                </div>
+                            </div>
+                            <span className="text-muted fs-12">
+                                <span className="text-secondary">
+                                    <i className="fe fe-arrow-up-circle  text-secondary" /> 5%
+                                </span>
+                                Last week
+                            </span>
+                        </div>
+                    </div>
+                </div>
                 <div className="col-lg-6 col-md-12 col-sm-12 col-xl-3">
 
                     <div className="card overflow-hidden">

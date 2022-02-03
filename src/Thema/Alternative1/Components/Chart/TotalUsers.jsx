@@ -19,7 +19,7 @@ class TotalUsers extends Component {
                         left: 0,
                         blur: 4,
                         color: '#000',
-                        opacity: 0.1
+                        opacity: 0.05
                     }
                 },
                 colors: ['#EFCA00'],

@@ -14,7 +14,16 @@ class TotalExpenses extends Component {
                     },
 
                 },
-                colors: ['#0BF72E'],
+
+                colors: [
+                    function ({ value, seriesIndex, dataPointIndex, w }) {
+                        if (value > 40) {
+                            return "#0BF72E";
+                        } else {
+                            return "#CCFAD3";
+                        }
+                    }
+                ],
                 // fill: {
                 //     type: "gradient",
                 //     gradient: {
@@ -33,13 +42,21 @@ class TotalExpenses extends Component {
                 stroke: {
                     curve: 'smooth',
                     width: 1,
-                    colors: ["#0BF72E"]
+                    colors: [
+                        function ({ value, seriesIndex, dataPointIndex, w }) {
+                            if (value > 40) {
+                                return "#0BF72E";
+                            } else {
+                                return "#CCFAD3";
+                            }
+                        }
+                    ]
 
                 },
                 plotOptions: {
                     bar: {
                         borderRadius: 2,
-                        columnWidth: 25,
+                        columnWidth: 35,
                     },
                 },
 
