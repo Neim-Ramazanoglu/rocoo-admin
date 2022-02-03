@@ -40,7 +40,7 @@ class TotalUsers extends Component {
                 },
                 stroke: {
                     curve: 'smooth',
-                    width: 2,
+                    width: 3,
 
                 }
             },

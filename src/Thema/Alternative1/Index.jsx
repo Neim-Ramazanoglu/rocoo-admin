@@ -1,25 +1,30 @@
 import React from 'react';
 import Body from './Main/Body';
 import Header from './Main/Header';
+import { useState } from 'react'
 
 function Index() {
-    return <div className="page">
-        <div className="page-main">
+    const [leftNav, setLeftNav] = useState(false);
 
-            <Header />
-            <div className="main-content app-content mt-0">
-
-                <div className="side-app">
-
-                    {/* CONTAINER */}
-                    <Body />
-
-                    {/* CONTAINER END */}
+    function onChange() {
+        setLeftNav(!leftNav)
+    }
+    return <>
+        <div className="horizontalMenucontainer">
+            <div className={(leftNav ? "app sidebar-mini ltr light-mode sidebar-gone sidenav-toggled" : "app sidebar-mini ltr light-mode")}>
+                <div className="page">
+                    <div className="page-main">
+                        <Header leftNav={leftNav} onChange={onChange} />
+                        <div className="main-content app-content mt-0">
+                            <div className="side-app">
+                                <Body />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </>
 }
 
 export default Index;
