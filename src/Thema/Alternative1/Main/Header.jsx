@@ -8,11 +8,13 @@ import "../Assets/css/dark-style.css"
 import "../Assets/css/animated.css"
 import "../Assets/css/transparent-style.scss"
 import { useState } from 'react'
+
 import asd from "../Assets/images/brand/logo.png"
 function Header(props) {
 
     const [apps, setApps] = useState(false);
-    console.log("apps", apps);
+    const [driver, setDriver] = useState(false);
+
     return <>
         <div className="app-header header sticky" style={{ marginBottom: "-74px" }}>
             <div className="container-fluid main-container">
@@ -536,12 +538,13 @@ function Header(props) {
                         <li className="sub-category">
                             {/* <h3>Main</h3> */}
                         </li>
-                        <li className="slide is-expanded">
 
+                        <li className="slide is-expanded">
                             <a
                                 className="side-menu__item active"
                                 data-bs-toggle="slide"
-                                href="index.html"
+                                href="/"
+
                             >
                                 <i className="side-menu__icon fe fe-home" />
                                 <span className="side-menu__label">Ana Sayfa</span>
@@ -551,7 +554,6 @@ function Header(props) {
                             {/* <h3>UI Kit</h3> */}
                         </li>
                         <li className={(apps ? "slide is-expanded" : "slide ")}>
-
                             <a
                                 className="side-menu__item"
                                 data-bs-toggle="slide"
@@ -584,204 +586,40 @@ function Header(props) {
                                         Full calendar
                                     </a>
                                 </li>
-
-
-
-
                             </ul>
                         </li>
-                        <li className="slide">
+                        <li className={(driver ? "slide is-expanded" : "slide ")}>
 
                             <a
                                 className="side-menu__item"
                                 data-bs-toggle="slide"
                                 href="#"
+                                onClick={() => { setDriver(!driver) }}
                             >
-                                <i className="side-menu__icon fe fe-package" />
+
+                                <i className="side-menu__icon fe fe-users" />
                                 <span className="side-menu__label">Sürücüler</span>
                                 <i className="angle fe fe-chevron-right" />
                             </a>
-                            <ul className="slide-menu">
+                            <ul className={(driver ? "slide-menu open" : "slide-menu ")}>
 
                                 <li className="side-menu-label1">
-                                    <a href="#">Bootstrap</a>
+                                    <a href="/driverDetail">Sürücüler</a>
                                 </li>
-                                <li>
-                                    <a href="alerts.html" className="slide-item">
 
-                                        Alerts
+                                <li>
+                                    <a href="/drivers" className="slide-item">
+                                        Sürücü Listesi
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="buttons.html" className="slide-item">
-
-                                        Buttons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="colors.html" className="slide-item">
-
-                                        Colors
-                                    </a>
-                                </li>
-                                <li className="sub-slide">
-
-                                    <a
-                                        className="sub-side-menu__item"
-                                        data-bs-toggle="sub-slide"
-                                        href="#"
-                                    >
-                                        <span className="sub-side-menu__label">Avatars</span>
-                                        <i className="sub-angle fe fe-chevron-right" />
-                                    </a>
-                                    <ul className="sub-slide-menu">
-
-                                        <li>
-                                            <a href="avatarsquare.html" className="sub-slide-item">
-
-                                                Avatar-Square
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="avatar-round.html" className="sub-slide-item">
-
-                                                Avatar-Rounded
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="avatar-radius.html" className="sub-slide-item">
-
-                                                Avatar-Radius
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="dropdown.html" className="slide-item">
-
-                                        Drop downs
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="listgroup.html" className="slide-item">
-
-                                        List Group
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tags.html" className="slide-item">
-
-                                        Tags
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="pagination.html" className="slide-item">
-
-                                        Pagination
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="navigation.html" className="slide-item">
-
-                                        Navigation
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="typography.html" className="slide-item">
-
-                                        Typography
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="breadcrumbs.html" className="slide-item">
-
-                                        Breadcrumbs
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="badge.html" className="slide-item">
-
-                                        Badges / Pills
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="panels.html" className="slide-item">
-
-                                        Panels
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="thumbnails.html" className="slide-item">
-
-                                        Thumbnails
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="offcanvas.html" className="slide-item">
-
-                                        Offcanvas
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="toast.html" className="slide-item">
-
-                                        Toast
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="scrollspy.html" className="slide-item">
-
-                                        Scrollspy
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mediaobject.html" className="slide-item">
-
-                                        Media Object
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="accordion.html" className="slide-item">
-
-                                        Accordions
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tabs.html" className="slide-item">
-
-                                        Tabs
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="modal.html" className="slide-item">
-
-                                        Modal
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tooltipandpopover.html" className="slide-item">
-
-                                        Tooltip and popover
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="progress.html" className="slide-item">
-
-                                        Progress
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="carousel.html" className="slide-item">
-
-                                        Carousels
+                                    <a href="/driverDetail" className="slide-item">
+                                        Sürücü Detayı
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li className="sub-category">
 
-                            <h3>Pre-build Pages</h3>
-                        </li>
                         <li className="slide">
 
                             <a
@@ -789,8 +627,8 @@ function Header(props) {
                                 data-bs-toggle="slide"
                                 href="#"
                             >
-                                <i className="side-menu__icon fe fe-layers" />
-                                <span className="side-menu__label">Pages</span>
+                                <i className="side-menu__icon fe fe-truck" />
+                                <span className="side-menu__label">Kargolar</span>
                                 <i className="angle fe fe-chevron-right" />
                             </a>
                             <ul className="slide-menu">
@@ -1033,494 +871,11 @@ function Header(props) {
                                 </li>
                             </ul>
                         </li>
-                        <li className="slide">
-
-                            <a
-                                className="side-menu__item"
-                                data-bs-toggle="slide"
-                                href="#"
-                            >
-                                <i className="side-menu__icon fe fe-shopping-bag" />
-                                <span className="side-menu__label">E-Commerce</span>
-                                <i className="angle fe fe-chevron-right" />
-                            </a>
-                            <ul className="slide-menu">
-
-                                <li className="side-menu-label1">
-                                    <a href="#">E-Commerce</a>
-                                </li>
-                                <li>
-                                    <a href="shop.html" className="slide-item">
-
-                                        Shop
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="shop-description.html" className="slide-item">
-
-                                        Product Details
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="cart.html" className="slide-item">
-
-                                        Shopping Cart
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="add-product.html" className="slide-item">
-
-                                        Add Product
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="wishlist.html" className="slide-item">
-
-                                        Wishlist
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="checkout.html" className="slide-item">
-
-                                        Checkout
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="slide">
-
-                            <a
-                                className="side-menu__item"
-                                data-bs-toggle="slide"
-                                href="#"
-                            >
-                                <i className="side-menu__icon fe fe-folder" />
-                                <span className="side-menu__label">File Manager</span>
-                                <span className="badge bg-pink side-badge">4</span>
-                                <i className="angle fe fe-chevron-right hor-angle" />
-                            </a>
-                            <ul className="slide-menu">
-
-                                <li className="side-menu-label1">
-                                    <a href="#">File Manager</a>
-                                </li>
-                                <li>
-                                    <a href="file-manager.html" className="slide-item">
-
-                                        File Manager
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="filemanager-list.html" className="slide-item">
-
-                                        File Manager List
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="filemanager-details.html" className="slide-item">
-
-                                        File Details
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="file-attachments.html" className="slide-item">
-
-                                        File Attachments
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                         <li className="sub-category">
 
-                            <h3>Misc Pages</h3>
+                            {/* <h3>Pre-build Pages</h3> */}
                         </li>
-                        <li className="slide">
 
-                            <a
-                                className="side-menu__item"
-                                data-bs-toggle="slide"
-                                href="#"
-                            >
-                                <i className="side-menu__icon fe fe-users" />
-                                <span className="side-menu__label">Authentication</span>
-                                <i className="angle fe fe-chevron-right" />
-                            </a>
-                            <ul className="slide-menu">
-
-                                <li className="side-menu-label1">
-                                    <a href="#">Authentication</a>
-                                </li>
-                                <li>
-                                    <a href="login.html" className="slide-item">
-
-                                        Login
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="register.html" className="slide-item">
-
-                                        Register
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="forgot-password.html" className="slide-item">
-
-                                        Forgot Password
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="lockscreen.html" className="slide-item">
-
-                                        Lock screen
-                                    </a>
-                                </li>
-                                <li className="sub-slide">
-
-                                    <a
-                                        className="sub-side-menu__item"
-                                        data-bs-toggle="sub-slide"
-                                        href="#"
-                                    >
-                                        <span className="sub-side-menu__label">Error Pages</span>
-                                        <i className="sub-angle fe fe-chevron-right" />
-                                    </a>
-                                    <ul className="sub-slide-menu">
-
-                                        <li>
-                                            <a href="400.html" className="sub-slide-item">
-
-                                                400
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="401.html" className="sub-slide-item">
-
-                                                401
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="403.html" className="sub-slide-item">
-
-                                                403
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="404.html" className="sub-slide-item">
-
-                                                404
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="500.html" className="sub-slide-item">
-
-                                                500
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="503.html" className="sub-slide-item">
-
-                                                503
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="slide">
-
-                            <a
-                                className="side-menu__item"
-                                data-bs-toggle="slide"
-                                href="#"
-                            >
-
-                                <i className="side-menu__icon fe fe-cpu" />
-                                <span className="side-menu__label">Submenu items</span>
-                                <i className="angle fe fe-chevron-right" />
-                            </a>
-                            <ul className="slide-menu">
-
-                                <li className="side-menu-label1">
-                                    <a href="#">Submenu items</a>
-                                </li>
-                                <li>
-                                    <a href="#" className="slide-item">
-                                        Submenu-1
-                                    </a>
-                                </li>
-                                <li className="sub-slide">
-
-                                    <a
-                                        className="sub-side-menu__item"
-                                        data-bs-toggle="sub-slide"
-                                        href="#"
-                                    >
-                                        <span className="sub-side-menu__label">Submenu-2</span>
-                                        <i className="sub-angle fe fe-chevron-right" />
-                                    </a>
-                                    <ul className="sub-slide-menu">
-
-                                        <li>
-                                            <a className="sub-slide-item" href="#">
-                                                Submenu-2.1
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="sub-slide-item" href="#">
-                                                Submenu-2.2
-                                            </a>
-                                        </li>
-                                        <li className="sub-slide2">
-
-                                            <a
-                                                className="sub-side-menu__item2"
-                                                href="#"
-                                                data-bs-toggle="sub-slide2"
-                                            >
-                                                <span className="sub-side-menu__label2">
-                                                    Submenu-2.3
-                                                </span>
-                                                <i className="sub-angle2 fe fe-chevron-right" />
-                                            </a>
-                                            <ul className="sub-slide-menu2">
-
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        className="sub-slide-item2"
-                                                    >
-                                                        Submenu-2.3.1
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        className="sub-slide-item2"
-                                                    >
-                                                        Submenu-2.3.2
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        className="sub-slide-item2"
-                                                    >
-                                                        Submenu-2.3.3
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a className="sub-slide-item" href="#">
-                                                Submenu-2.4
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="sub-slide-item" href="#">
-                                                Submenu-2.5
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="sub-category">
-
-                            <h3>General</h3>
-                        </li>
-                        <li>
-
-                            <a className="side-menu__item" href="widgets.html">
-                                <i className="side-menu__icon fe fe-grid" />
-                                <span className="side-menu__label">Widgets</span>
-                            </a>
-                        </li>
-                        <li className="slide">
-
-                            <a
-                                className="side-menu__item"
-                                data-bs-toggle="slide"
-                                href="#"
-                            >
-                                <i className="side-menu__icon fe fe-map-pin" />
-                                <span className="side-menu__label">Maps</span>
-                                <i className="angle fe fe-chevron-right" />
-                            </a>
-                            <ul className="slide-menu">
-
-                                <li className="side-menu-label1">
-                                    <a href="#">Maps</a>
-                                </li>
-                                <li>
-                                    <a href="maps1.html" className="slide-item">
-                                        Leaflet Maps
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="maps2.html" className="slide-item">
-                                        Mapel Maps
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="maps.html" className="slide-item">
-                                        Vector Maps
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="slide">
-
-                            <a
-                                className="side-menu__item"
-                                data-bs-toggle="slide"
-                                href="#"
-                            >
-                                <i className="side-menu__icon fe fe-bar-chart-2" />
-                                <span className="side-menu__label">Charts</span>
-                                <span className="badge bg-secondary side-badge">6</span>
-                                <i className="angle fe fe-chevron-right hor-angle" />
-                            </a>
-                            <ul className="slide-menu">
-
-                                <li className="side-menu-label1">
-                                    <a href="#">Charts</a>
-                                </li>
-                                <li>
-                                    <a href="chart-chartist.html" className="slide-item">
-                                        Chart Js
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="chart-flot.html" className="slide-item">
-
-                                        Flot Charts
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="chart-echart.html" className="slide-item">
-
-                                        ECharts
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="chart-morris.html" className="slide-item">
-
-                                        Morris Charts
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="chart-nvd3.html" className="slide-item">
-
-                                        Nvd3 Charts
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="charts.html" className="slide-item">
-
-                                        C3 Bar Charts
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="chart-line.html" className="slide-item">
-
-                                        C3 Line Charts
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="chart-donut.html" className="slide-item">
-
-                                        C3 Donut Charts
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="chart-pie.html" className="slide-item">
-
-                                        C3 Pie charts
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="slide">
-
-                            <a
-                                className="side-menu__item"
-                                data-bs-toggle="slide"
-                                href="#"
-                            >
-                                <i className="side-menu__icon fe fe-wind" />
-                                <span className="side-menu__label">Icons</span>
-                                <i className="angle fe fe-chevron-right" />
-                            </a>
-                            <ul className="slide-menu">
-
-                                <li className="side-menu-label1">
-                                    <a href="#">Icons</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html" className="slide-item">
-
-                                        Font Awesome
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="icons2.html" className="slide-item">
-
-                                        Material Design Icons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="icons3.html" className="slide-item">
-
-                                        Simple Line Icons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="icons4.html" className="slide-item">
-
-                                        Feather Icons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="icons5.html" className="slide-item">
-
-                                        Ionic Icons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="icons6.html" className="slide-item">
-
-                                        Flag Icons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="icons7.html" className="slide-item">
-
-                                        pe7 Icons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="icons8.html" className="slide-item">
-
-                                        Themify Icons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="icons9.html" className="slide-item">
-                                        Typicons Icons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="icons10.html" className="slide-item">
-                                        Weather Icons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="icons11.html" className="slide-item">
-                                        Bootstrap Icons
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
                     <div className="slide-right" id="slide-right">
                         <svg

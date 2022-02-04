@@ -17,7 +17,9 @@ function Index() {
                         <Header leftNav={leftNav} onChange={onChange} />
                         <div className="main-content app-content mt-0">
                             <div className="side-app">
-                                <Body />
+                                <div className="main-container container-fluid">
+                                    <Body />
+                                </div>
                             </div>
                         </div>
                     </div>
