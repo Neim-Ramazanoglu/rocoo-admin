@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import pic from "../../Assets/images/users/0.jpg"
 
 function DriverList() {
     const [entries, setEntries] = useState(true);
@@ -11,45 +12,72 @@ function DriverList() {
                 <div className="card">
                     <div className="card-body">
                         <div className="table-responsive">
+
                             <table className="table border text-nowrap text-md-nowrap table-striped mb-0">
-                                <thead>
+                                <thead >
                                     <tr>
                                         <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Salary</th>
+                                        <th>Fotoğraf</th>
+                                        <th>İsim</th>
+                                        <th>Plaka</th>
+                                        <th>Bölge</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
+                                <tbody >
+                                    <tr >
                                         <td>1</td>
+                                        <td>
+                                            <div >
+                                                <img src={pic} alt="" className="cart-img text-center" />
+                                            </div>
+                                        </td>
                                         <td>Joan Powell</td>
-                                        <td>Associate Developer</td>
-                                        <td>$450,870</td>
+                                        <td>123-xxx-456</td>
+                                        <td>Z</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
+                                        <td>
+                                            <div >
+                                                <img src={pic} alt="" className="cart-img text-center" />
+                                            </div>
+                                        </td>
                                         <td>Gavin Gibson</td>
-                                        <td>Account manager</td>
-                                        <td>$230,540</td>
+                                        <td>123-xxx-456</td>
+                                        <td>X</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Julian Kerr</td>
-                                        <td>Senior Javascript Developer</td>
-                                        <td>$55,300</td>
+                                        <td>
+                                            <div >
+                                                <img src={pic} alt="" className="cart-img text-center" />
+                                            </div>
+                                        </td>
+                                        <td >Julian Kerr</td>
+                                        <td>123-xxx-456</td>
+                                        <td>C</td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
+                                        <td>
+                                            <div >
+                                                <img src={pic} alt="" className="cart-img text-center" />
+                                            </div>
+                                        </td>
                                         <td>Cedric Kelly</td>
-                                        <td>Accountant</td>
-                                        <td>$234,100</td>
+                                        <td>123-xxx-456</td>
+                                        <td>V</td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
+                                        <td>
+                                            <div >
+                                                <img src={pic} alt="" className="cart-img text-center" />
+                                            </div>
+                                        </td>
                                         <td>Samantha May</td>
-                                        <td>Junior Technical Author</td>
-                                        <td>$43,198</td>
+                                        <td>123-xxx-456</td>
+                                        <td>B</td>
                                     </tr>
                                 </tbody>
                             </table>
