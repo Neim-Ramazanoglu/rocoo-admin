@@ -1,6 +1,8 @@
 import React from 'react';
 import pic from "../../Assets/images/users/0.jpg"
 import TotalCost from '../Chart/TotalCost';
+import "../../Assets/colors/color1.css"
+
 function DriverDetail() {
     return <div>
         <div className="page-header">
@@ -148,6 +150,7 @@ function DriverDetail() {
                                     <th>Paket Alım</th>
                                     <th>Paket Teslim</th>
                                     <th>Durum</th>
+                                    <th>İşlem</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -162,6 +165,14 @@ function DriverDetail() {
                                             Teslim Edilmedi
                                         </span>
                                     </td>
+                                    <td>
+                                        <a href="/driverDetail/cargoChanges">
+                                            <button id="bEdit" type="button" className="btn btn-sm btn-primary">
+                                                <span className="fe fe-edit"> </span>
+                                            </button>
+                                        </a>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -173,6 +184,14 @@ function DriverDetail() {
                                             <i className="side-menu__icon fe fe-truck" style={{ marginTop: "6px", marginRight: "5px" }} />
                                             Yolda
                                         </span>
+                                    </td>
+                                    <td>
+                                        <a href="/driverDetail/cargoChanges">
+                                            <button id="bEdit" type="button" className="btn btn-sm btn-primary">
+                                                <span className="fe fe-edit"> </span>
+                                            </button>
+                                        </a>
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -186,6 +205,14 @@ function DriverDetail() {
                                             <i className="side-menu__icon fe fe-truck" style={{ marginTop: "6px", marginLeft: "5px" }} />
                                         </span>
                                     </td>
+                                    <td>
+                                        <a href="/driverDetail/cargoChanges">
+                                            <button id="bEdit" type="button" className="btn btn-sm btn-primary">
+                                                <span className="fe fe-edit"> </span>
+                                            </button>
+                                        </a>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -198,6 +225,14 @@ function DriverDetail() {
                                             Teslim Edildi
                                         </span>
                                     </td>
+                                    <td>
+                                        <a href="/driverDetail/cargoChanges">
+                                            <button id="bEdit" type="button" className="btn btn-sm btn-primary">
+                                                <span className="fe fe-edit"> </span>
+                                            </button>
+                                        </a>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -209,6 +244,14 @@ function DriverDetail() {
                                             Teslim Edildi
                                             <i className="side-menu__icon fe fe-check-circle" style={{ marginTop: "6px", marginLeft: "5px" }} />
                                         </span>
+                                    </td>
+                                    <td>
+                                        <a href="/driverDetail/cargoChanges">
+                                            <button id="bEdit" type="button" className="btn btn-sm btn-primary">
+                                                <span className="fe fe-edit"> </span>
+                                            </button>
+                                        </a>
+
                                     </td>
                                 </tr>
                             </tbody>

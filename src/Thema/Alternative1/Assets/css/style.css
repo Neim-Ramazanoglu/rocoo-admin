@@ -8216,7 +8216,7 @@ ul.dropdown-menu li.dropdown ul.dropdown-menu .dropdown-plus-title {
 
 .form-control:disabled,
 .form-control[readonly] {
-    background-color: #f6f6fb;
+    background-color: #fff;
     opacity: 1;
 }
 
