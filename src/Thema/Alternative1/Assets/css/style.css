@@ -48618,6 +48618,9 @@ table.table-bordered.dataTable thead tr:first-child td {
     .tabs-menu ul li a {
         border-radius: 7px;
     }
+   .mobil-logo-center {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1280px) {

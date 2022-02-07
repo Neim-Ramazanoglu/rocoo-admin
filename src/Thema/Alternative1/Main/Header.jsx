@@ -35,30 +35,21 @@ function Header(props) {
                             className="header-brand-img desktop-logo"
                             alt="logo"
                         />
-                        <img
-                            src={require("../Assets/images/brand/logo-3.png")}
-                            className="header-brand-img light-logo1"
-                            alt="logo"
-                        />
+                        <div className='mobil-logo-center'>
+                            <img
+                                src={require("../Assets/images/brand/rocoo-logo2.png")}
+                                className="header-brand-img light-logo1"
+                                alt="logo"
+                                style={{ maxHeight: "100px" }}
+                            />
+                        </div>
                     </a>
                     {/* LOGO */}
 
                     <div className="d-flex order-lg-2 ms-auto header-right-icons">
 
 
-                        {/* SEARCH */}
-                        <button
-                            className="navbar-toggler navresponsive-toggler d-lg-none ms-auto"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent-4"
-                            aria-controls="navbarSupportedContent-4"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
 
-                            <span className="navbar-toggler-icon fe fe-more-vertical" />
-                        </button>
                         <div className="d-flex order-lg-2">
                             <div className="dropdown d-flex profile-1">
                                 <span>İşletme Adı</span>
@@ -90,7 +81,6 @@ function Header(props) {
                 <div className="side-header">
 
                     <a className="header-brand1" >
-
                         <img
                             src={require("../Assets/images/brand/logo.png")}
                             className="header-brand-img desktop-logo"
@@ -102,15 +92,17 @@ function Header(props) {
                             alt="logo"
                         />
                         <img
-                            src={require("../Assets/images/brand/logo-2.png")}
+                            src={require("../Assets/images/brand/rocoo-logo3.png")}
                             className="header-brand-img light-logo"
                             alt="logo"
                         />
                         <img
-                            src={require("../Assets/images/brand/logoo.png")}
+                            src={require("../Assets/images/brand/rocoo-logo2.png")}
                             className="header-brand-img light-logo1"
                             alt="logo"
+
                         />
+
                     </a>
                     {/* LOGO */}
                 </div>
