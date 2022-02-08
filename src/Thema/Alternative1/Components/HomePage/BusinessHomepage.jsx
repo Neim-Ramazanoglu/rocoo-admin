@@ -3,7 +3,6 @@ import TotalCost from '../Chart/TotalCost';
 import TotalExpenses from '../Chart/TotalExpenses';
 import TotalProfit from '../Chart/TotalProfit';
 import TotalUsers from '../Chart/TotalUsers';
-
 function BusinessHomepage() {
     return <div>
         <div className="page-header">

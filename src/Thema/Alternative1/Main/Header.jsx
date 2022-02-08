@@ -161,20 +161,14 @@ function Header(props) {
                                     <a href="#" >İşletmem</a>
                                 </li>
                                 <li>
-                                    <a href="cards.html" className="slide-item">
-                                        Cards design
+                                    <a href="/profile" className="slide-item">
+                                        İşletme Profili
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="calendar.html" className="slide-item">
+                                    <a href="/map" className="slide-item">
 
-                                        Default calendar
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="calendar2.html" className="slide-item">
-
-                                        Full calendar
+                                        map
                                     </a>
                                 </li>
                             </ul>

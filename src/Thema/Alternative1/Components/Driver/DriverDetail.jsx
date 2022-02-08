@@ -152,7 +152,7 @@ function DriverDetail() {
                             <thead>
                                 <tr>
                                     <th>Sıra</th>
-                                    <th>Sürücü</th>
+                                    <th>Adres</th>
                                     <th>Paket Alım</th>
                                     <th>Paket Teslim</th>
                                     <th>Durum</th>
@@ -162,7 +162,7 @@ function DriverDetail() {
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Joan Powell</td>
+                                    <td>Adres</td>
                                     <td>18.10.2021</td>
                                     <td>22.10.2021</td>
                                     <td>
@@ -182,7 +182,7 @@ function DriverDetail() {
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Gavin Gibson</td>
+                                    <td>Adres</td>
                                     <td>Tarih Gelecek</td>
                                     <td>Tarih Gelecek</td>
                                     <td>
@@ -202,7 +202,7 @@ function DriverDetail() {
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Julian Kerr</td>
+                                    <td>Adres</td>
                                     <td>Tarih Gelecek</td>
                                     <td>Tarih Gelecek</td>
                                     <td>
@@ -222,7 +222,7 @@ function DriverDetail() {
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Cedric Kelly</td>
+                                    <td>Adres</td>
                                     <td>Tarih Gelecek</td>
                                     <td>Tarih Gelecek</td>
                                     <td>
@@ -242,7 +242,7 @@ function DriverDetail() {
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td>Samantha May</td>
+                                    <td>Adres</td>
                                     <td>Tarih Gelecek</td>
                                     <td>Tarih Gelecek</td>
                                     <td>
