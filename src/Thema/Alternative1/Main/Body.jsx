@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch
+} from "react-router-dom";
 import BusinessProfile from '../Components/Business/BusinessProfile';
 import Cargo from '../Components/Cargo/Cargo';
 import CargoChanges from '../Components/Driver/CargoChanges';
@@ -9,22 +14,22 @@ import BusinessHomepage from '../Components/HomePage/BusinessHomepage';
 import Map from '../Components/Map/Map';
 
 function Body() {
-    return <>
-        <Router>
-            <Routes>
-                <Route path="/" exact element={<BusinessHomepage />} />
-                <Route path="/drivers" exact element={<DriverList />} />
-                <Route path="/driverDetail" exact element={<DriverDetail />} />
-                <Route path="/driverDetail/cargoChanges" exact element={<CargoChanges />} />
-                <Route path="/cargo" exact element={<Cargo />} />
-                <Route path="/map" exact element={<Map />} />
-                <Route path="/profile" exact element={<BusinessProfile />} />
+    return (
+        <div>
+            <Switch>
+                <Route path="/" exact> <BusinessHomepage />  </Route>
+                <Route path="/drivers" exact>  <DriverList /> </Route>
+                <Route path="/driverDetail" exact>  <DriverDetail /> </Route>
+                <Route path="/driverDetail/cargoChanges" exact>  <CargoChanges /> </Route>
+                <Route path="/cargo" exact><Cargo /> </Route>
+                <Route path="/map" exact> <Map /> </Route>
+                <Route path="/profile" exact> <BusinessProfile /></Route>
 
 
 
-            </Routes>
-        </Router>
-    </>;
+            </Switch>
+        </div>
+    )
 }
 
 export default Body;

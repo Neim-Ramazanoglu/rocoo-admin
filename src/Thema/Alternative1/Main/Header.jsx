@@ -9,8 +9,8 @@ import "../Assets/css/animated.css"
 import "../Assets/css/transparent-style.scss"
 import { useState } from 'react'
 import pic from "../Assets/images/users/0.jpg"
+import { NavLink } from "react-router-dom";
 
-import asd from "../Assets/images/brand/logo.png"
 function Header(props) {
 
     const [apps, setApps] = useState(false);
@@ -131,15 +131,15 @@ function Header(props) {
                         </li>
 
                         <li className="slide is-expanded">
-                            <a
+                            <NavLink
                                 className="side-menu__item active"
                                 data-bs-toggle="slide"
-                                href="/"
+                                to="/"
 
                             >
                                 <i className="side-menu__icon fe fe-home" />
                                 <span className="side-menu__label">Ana Sayfa</span>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="sub-category">
                             {/* <h3>UI Kit</h3> */}
@@ -161,15 +161,15 @@ function Header(props) {
                                     <a href="#" >İşletmem</a>
                                 </li>
                                 <li>
-                                    <a href="/profile" className="slide-item">
+                                    <NavLink to="/profile" className="slide-item">
                                         İşletme Profili
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <a href="/map" className="slide-item">
+                                    <NavLink to="/map" className="slide-item">
 
                                         map
-                                    </a>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </li>
@@ -189,34 +189,34 @@ function Header(props) {
                             <ul className={(driver ? "slide-menu open" : "slide-menu ")}>
 
                                 <li className="side-menu-label1">
-                                    <a href="/driverDetail">Sürücüler</a>
+                                    <NavLink to="/driverDetail">Sürücüler</NavLink>
                                 </li>
 
                                 <li>
-                                    <a href="/drivers" className="slide-item">
+                                    <NavLink to="/drivers" className="slide-item">
                                         Sürücü Listesi
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <a href="/driverDetail" className="slide-item">
+                                    <NavLink to="/driverDetail" className="slide-item">
                                         Sürücü Detayı
-                                    </a>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </li>
 
                         <li className={(cargo ? "slide is-expanded" : "slide ")}>
 
-                            <a
+                            <NavLink
                                 className="side-menu__item"
                                 data-bs-toggle="slide"
-                                href="/cargo"
+                                to="/cargo"
                                 onClick={() => { setCargo(!cargo) }}
                             >
                                 <i className="side-menu__icon fe fe-truck" />
                                 <span className="side-menu__label">Kargolar</span>
                                 <i className="angle fe fe-chevron-right" />
-                            </a>
+                            </NavLink>
                             <ul className={(cargo ? "slide-menu open" : "slide-menu ")}>
 
 

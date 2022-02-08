@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "../../Assets/css/style.css"
-import "../../Assets/plugins/select2/select2.full.min.js"
 function CargoChanges() {
     const [state, setState] = useState("1");
     const [dropdown, setDropdown] = useState(false);
