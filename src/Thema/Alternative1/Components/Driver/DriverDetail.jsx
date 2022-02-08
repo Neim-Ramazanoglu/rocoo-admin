@@ -24,21 +24,27 @@ function DriverDetail() {
                                 }}
                             />
                             <div className="profile-img-content text-dark text-start">
-                                <div className="text-dark">
-                                    <h3 className="h3 mb-2">Tokyo</h3>
-
-                                    <i className="side-menu__icon fe fe-truck" />
-                                    <span className="text-muted mx-3 fs-16">Plaka</span>
-                                    <br />
-                                    <i className="side-menu__icon fe fe-map-pin" />
-                                    <span className="text-muted mx-3 fs-16">Bölge</span>
-                                    <br />
-                                    <i className="side-menu__icon fe fe-phone-call" />
-                                    <span className="text-muted mx-3 fs-16">Telefon</span>
-                                    <br />
-                                    <i className="side-menu__icon fe fe-at-sign" />
-                                    <span className="text-muted mx-3 fs-16">Mail</span>
-                                </div>
+                                <ul className="mt-5 nav panel-tabs" style={{ justifyContent: "space-between" }}>
+                                    <li>
+                                        <h3 className="h4 mb-2">İsim Soyisim</h3>
+                                    </li>
+                                    <li>
+                                        <i className="side-menu__icon fe fe-truck" />
+                                        <span className="text-muted mx-3 fs-16">Plaka</span>
+                                    </li>
+                                    <li>
+                                        <i className="side-menu__icon fe fe-map-pin" />
+                                        <span className="text-muted mx-3 fs-16">Bölge</span>
+                                    </li>
+                                    <li>
+                                        <i className="side-menu__icon fe fe-phone-call" />
+                                        <span className="text-muted mx-3 fs-16">Telefon</span>
+                                    </li>
+                                    <li>
+                                        <i className="side-menu__icon fe fe-at-sign" />
+                                        <span className="text-muted mx-3 fs-16">Mail</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div className="btn-profile">

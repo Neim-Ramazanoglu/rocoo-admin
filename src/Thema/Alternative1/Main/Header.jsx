@@ -15,6 +15,7 @@ function Header(props) {
 
     const [apps, setApps] = useState(false);
     const [driver, setDriver] = useState(false);
+    const [cargo, setCargo] = useState(false);
 
     return <>
         <div className="app-header header sticky" style={{ marginBottom: "-74px" }}>
@@ -210,255 +211,21 @@ function Header(props) {
                             </ul>
                         </li>
 
-                        <li className="slide">
+                        <li className={(cargo ? "slide is-expanded" : "slide ")}>
 
                             <a
                                 className="side-menu__item"
                                 data-bs-toggle="slide"
-                                href="#"
+                                href="/cargo"
+                                onClick={() => { setCargo(!cargo) }}
                             >
                                 <i className="side-menu__icon fe fe-truck" />
                                 <span className="side-menu__label">Kargolar</span>
                                 <i className="angle fe fe-chevron-right" />
                             </a>
-                            <ul className="slide-menu">
+                            <ul className={(cargo ? "slide-menu open" : "slide-menu ")}>
 
-                                <li className="side-menu-label1">
-                                    <a href="#">Pages</a>
-                                </li>
-                                <li>
-                                    <a href="profile.html" className="slide-item">
 
-                                        Profile
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="editprofile.html" className="slide-item">
-
-                                        Edit Profile
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="notify-list.html" className="slide-item">
-
-                                        Notifications List
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="email-compose.html" className="slide-item">
-
-                                        Mail-Compose
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="email-inbox.html" className="slide-item">
-
-                                        Mail-Inbox
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="email-read.html" className="slide-item">
-
-                                        Mail-Read
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="gallery.html" className="slide-item">
-
-                                        Gallery
-                                    </a>
-                                </li>
-                                <li className="sub-slide">
-
-                                    <a
-                                        className="sub-side-menu__item"
-                                        data-bs-toggle="sub-slide"
-                                        href="#"
-                                    >
-                                        <span className="sub-side-menu__label">Forms</span>
-                                        <i className="sub-angle fe fe-chevron-right" />
-                                    </a>
-                                    <ul className="sub-slide-menu">
-
-                                        <li>
-                                            <a href="form-elements.html" className="sub-slide-item">
-
-                                                Form Elements
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="form-layouts.html" className="sub-slide-item">
-
-                                                Form Layouts
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="form-advanced.html" className="sub-slide-item">
-
-                                                Form Advanced
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="form-editor.html" className="sub-slide-item">
-
-                                                Form Editor
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="form-wizard.html" className="sub-slide-item">
-
-                                                Form Wizard
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="form-validation.html" className="sub-slide-item">
-
-                                                Form Validation
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="sub-slide">
-
-                                    <a
-                                        className="sub-side-menu__item"
-                                        data-bs-toggle="sub-slide"
-                                        href="#"
-                                    >
-                                        <span className="sub-side-menu__label">Tables</span>
-                                        <i className="sub-angle fe fe-chevron-right" />
-                                    </a>
-                                    <ul className="sub-slide-menu">
-
-                                        <li>
-                                            <a href="tables.html" className="sub-slide-item">
-                                                Default table
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="datatable.html" className="sub-slide-item">
-
-                                                Data Tables
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="edit-table.html" className="sub-slide-item">
-
-                                                Edit Tables
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="sub-slide">
-
-                                    <a
-                                        className="sub-side-menu__item"
-                                        data-bs-toggle="sub-slide"
-                                        href="#"
-                                    >
-                                        <span className="sub-side-menu__label">Extension</span>
-                                        <i className="sub-angle fe fe-chevron-right" />
-                                    </a>
-                                    <ul className="sub-slide-menu">
-
-                                        <li>
-                                            <a href="about.html" className="sub-slide-item">
-
-                                                About Company
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="services.html" className="sub-slide-item">
-
-                                                Services
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="faq.html" className="sub-slide-item">
-
-                                                FAQS
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="terms.html" className="sub-slide-item">
-
-                                                Terms
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="invoice.html" className="sub-slide-item">
-
-                                                Invoice
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="pricing.html" className="sub-slide-item">
-
-                                                Pricing Tables
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="settings.html" className="sub-slide-item">
-
-                                                Settings
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="blog.html" className="sub-slide-item">
-
-                                                Blog
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-details.html" className="sub-slide-item">
-
-                                                Blog Details
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-post.html" className="sub-slide-item">
-
-                                                Blog Post
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="empty.html" className="sub-slide-item">
-
-                                                Empty Page
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="construction.html" className="sub-slide-item">
-
-                                                Under Construction
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="sub-slide">
-
-                                    <a
-                                        className="sub-side-menu__item"
-                                        data-bs-toggle="sub-slide"
-                                        href="#"
-                                    >
-                                        <span className="sub-side-menu__label">Switcher</span>
-                                        <i className="sub-angle fe fe-chevron-right" />
-                                    </a>
-                                    <ul className="sub-slide-menu">
-
-                                        <li>
-                                            <a className="sub-slide-item" href="switcher-1.html">
-                                                Switcher Style 1
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="sub-slide-item" href="switcher-2.html">
-                                                Switcher Style 2
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
                             </ul>
                         </li>
                         <li className="sub-category">
