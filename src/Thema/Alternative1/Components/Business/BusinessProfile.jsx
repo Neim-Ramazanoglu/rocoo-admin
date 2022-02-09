@@ -202,9 +202,9 @@ function BusinessProfile() {
                                     <td>Tarih Gelecek</td>
                                     <td>Tarih Gelecek</td>
                                     <td>
-                                        <span className="tag tag-orange">
+                                        <span className="tag tag-yellow">
+                                            <i className="side-menu__icon fe fe-truck" style={{ marginTop: "6px", marginRight: "5px" }} />
                                             Yolda
-                                            <i className="side-menu__icon fe fe-truck" style={{ marginTop: "6px", marginLeft: "5px" }} />
                                         </span>
                                     </td>
                                     <td>
@@ -222,7 +222,7 @@ function BusinessProfile() {
                                     <td>Tarih Gelecek</td>
                                     <td>
                                         <span className="tag tag-green">
-                                            <i className="side-menu__icon fe fe-check" style={{ marginTop: "6px", marginRight: "5px" }} />
+                                            <i className="side-menu__icon fe fe-check-circle" style={{ marginTop: "6px", marginRight: "5px" }} />
                                             Teslim Edildi
                                         </span>
                                     </td>
@@ -241,8 +241,8 @@ function BusinessProfile() {
                                     <td>Tarih Gelecek</td>
                                     <td>
                                         <span className="tag tag-green">
+                                            <i className="side-menu__icon fe fe-check-circle" style={{ marginTop: "6px", marginRight: "5px" }} />
                                             Teslim Edildi
-                                            <i className="side-menu__icon fe fe-check-circle" style={{ marginTop: "6px", marginLeft: "5px" }} />
                                         </span>
                                     </td>
                                     <td>

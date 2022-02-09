@@ -9,6 +9,7 @@ import BusinessProfile from '../Components/Business/BusinessProfile';
 import Cargo from '../Components/Cargo/Cargo';
 import CargoChanges from '../Components/Driver/CargoChanges';
 import DriverDetail from '../Components/Driver/DriverDetail';
+import DriverInsert from '../Components/Driver/DriverInsert';
 import DriverList from '../Components/Driver/DriverList';
 import BusinessHomepage from '../Components/HomePage/BusinessHomepage';
 import Map from '../Components/Map/Map';
@@ -24,6 +25,8 @@ function Body() {
                 <Route path="/cargo" exact><Cargo /> </Route>
                 <Route path="/map" exact> <Map /> </Route>
                 <Route path="/profile" exact> <BusinessProfile /></Route>
+                <Route path="/drivers/insert" exact> <DriverInsert /></Route>
+
 
 
 

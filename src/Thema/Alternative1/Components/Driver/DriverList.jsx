@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import pic from "../../Assets/images/users/0.jpg"
+import { useHistory } from 'react-router-dom';
 
 function DriverList() {
     const [entries, setEntries] = useState(true);
+    let history = useHistory();
     return <div>
         <div className="page-header">
             <h1 className="page-title">Sürücü Listesi</h1>
@@ -11,8 +13,10 @@ function DriverList() {
             <div className="col-lg-12">
                 <div className="card">
                     <div className="card-body">
+                        <button type="button" onClick={() => { history.push("/drivers/insert") }} className="btn btn-warning offset-10 mb-5">
+                            <i className="fe fe-user-plus me-2" />Sürücü Ekle
+                        </button>
                         <div className="table-responsive">
-
                             <table className="table border text-nowrap text-md-nowrap table-striped mb-0">
                                 <thead >
                                     <tr>
