@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TotalCost from '../Chart/TotalCost';
 import TotalExpenses from '../Chart/TotalExpenses';
 import TotalProfit from '../Chart/TotalProfit';
 import TotalUsers from '../Chart/TotalUsers';
+import Map from '../Map/Map';
 
 function BusinessHomepage() {
+    const [content, setContent] = useState("");
     return <div>
         <div className="page-header">
             <h1 className="page-title">İşletme Ekranı</h1>
@@ -368,6 +370,9 @@ function BusinessHomepage() {
                 </div>
 
             </div>
+        </div>
+        <div className='row'>
+            <Map />
         </div>
     </div>;
 }
