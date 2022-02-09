@@ -25,47 +25,43 @@ const markers = [
 ];
 
 function Map() {
-    return <div>
+    return <ComposableMap
+        projection="geoAzimuthalEqualArea"
+        projectionConfig={{
+
+            scale: 600
+        }}
+    >
+        <ZoomableGroup zoom={1}>
+            <Geographies geography={geoUrl}>
+                {({ geographies }) =>
+                    geographies.map(geo => (
+                        <Geography
+                            key={geo.rsmKey}
+                            geography={geo}
+                            fill="#DDD"
+                            stroke="#FFF"
+                        />
+                    ))
+                }
+            </Geographies>
+            {markers.map(({ name, coordinates, markerOffset, color }) => (
+                <Marker key={name} coordinates={coordinates}>
+                    <circle r={5} fill={color} stroke="#fff" strokeWidth={2} />
+                    <text
+                        textAnchor="middle"
+                        y={markerOffset}
+                        style={{ fontFamily: "system-ui", fill: "#5D5A6D" }}
+                    >
+                        {name}
+                    </text>
+                </Marker>
+            ))}
+        </ZoomableGroup>
+    </ComposableMap>
 
 
-        <div className="card" style={{ maxHeight: "400px" }}>
-            <ComposableMap
-                projection="geoAzimuthalEqualArea"
-                projectionConfig={{
 
-                    scale: 400
-                }}
-            >
-                <ZoomableGroup zoom={1}>
-                    <Geographies geography={geoUrl}>
-                        {({ geographies }) =>
-                            geographies.map(geo => (
-                                <Geography
-                                    key={geo.rsmKey}
-                                    geography={geo}
-                                    fill="#DDD"
-                                    stroke="#FFF"
-                                />
-                            ))
-                        }
-                    </Geographies>
-                    {markers.map(({ name, coordinates, markerOffset, color }) => (
-                        <Marker key={name} coordinates={coordinates}>
-                            <circle r={5} fill={color} stroke="#fff" strokeWidth={2} />
-                            <text
-                                textAnchor="middle"
-                                y={markerOffset}
-                                style={{ fontFamily: "system-ui", fill: "#5D5A6D" }}
-                            >
-                                {name}
-                            </text>
-                        </Marker>
-                    ))}
-                </ZoomableGroup>
-            </ComposableMap>
-        </div>
-
-    </div>;
 }
 
 export default Map;
