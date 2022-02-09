@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     // default setup
     $('#timer-countdown').countdown({
         from: 180, // 3 minutes (3*60)
@@ -22,7 +22,7 @@ $(function() {
     $('#timer-countercallback').countdown({
         from: 1440,
         to: 0,
-        timerEnd: function() {
+        timerEnd: function () {
             this.animate({ 'opacity': .5 }, 500).css({ 'text-decoration': 'line-through' });
         }
     });

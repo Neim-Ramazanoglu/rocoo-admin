@@ -17,7 +17,7 @@ function DriverInsert() {
                                 {/* Tabs */}
                                 <ul className="nav panel-tabs" style={{ justifyContent: "space-evenly" }}>
                                     <li>
-                                        <a href="#tab5" data-bs-toggle="tab" className={(state === "1" ? "active text-center" : "text-center")} >
+                                        <a href="#tab5" data-bs-toggle="tab" className={(state === "1" ? "active text-center" : "text-center")} onClick={() => { setState("1") }} >
                                             {
                                                 (state === "1" ?
                                                     <div>

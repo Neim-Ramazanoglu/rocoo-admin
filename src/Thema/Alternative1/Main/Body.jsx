@@ -28,8 +28,6 @@ function Body() {
                 <Route path="/drivers/insert" exact> <DriverInsert /></Route>
 
 
-
-
             </Switch>
         </div>
     )
