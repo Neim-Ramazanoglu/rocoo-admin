@@ -16,7 +16,7 @@ function Header(props) {
     const [apps, setApps] = useState(false);
     const [driver, setDriver] = useState(false);
     const [cargo, setCargo] = useState(false);
-
+    const [dashboard, setDashboard] = useState("1");
     return <>
         <div className="app-header header sticky" style={{ marginBottom: "-74px" }}>
             <div className="container-fluid main-container">
@@ -49,6 +49,16 @@ function Header(props) {
 
                     <div className="d-flex order-lg-2 ms-auto header-right-icons">
 
+                        <div className="d-flex country">
+                            <a
+                                className="nav-link icon text-center"
+                                data-bs-target="#country-selector"
+                                data-bs-toggle="modal"
+                            >
+                                <i className="fe fe-globe" />
+                                <span className="fs-16 ms-2 d-none d-xl-block">English</span>
+                            </a>
+                        </div>
 
 
                         <div className="d-flex order-lg-2">
@@ -124,26 +134,21 @@ function Header(props) {
                             <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
                         </svg>
                     </div>
-                    <ul className="side-menu open" style={{ marginLeft: 0 }}>
+                    <ul className="side-menu open" style={{ marginLeft: 0, marginTop: "100px" }}>
 
-                        <li className="sub-category">
-                            {/* <h3>Main</h3> */}
-                        </li>
 
-                        <li className="slide is-expanded">
+                        <li className={(dashboard ? "slide is-expanded" : "slide ")}>
                             <NavLink
-                                className="side-menu__item active"
+                                className="side-menu__item"
                                 data-bs-toggle="slide"
                                 to="/"
-
+                                onClick={() => { setDashboard(!dashboard) }}
                             >
                                 <i className="side-menu__icon fe fe-home" />
                                 <span className="side-menu__label">Ana Sayfa</span>
                             </NavLink>
                         </li>
-                        <li className="sub-category">
-                            {/* <h3>UI Kit</h3> */}
-                        </li>
+
                         <li className={(apps ? "slide is-expanded" : "slide ")}>
                             <a
                                 className="side-menu__item"
@@ -226,7 +231,17 @@ function Header(props) {
 
                             {/* <h3>Pre-build Pages</h3> */}
                         </li>
+                        <li className="slide is-expanded" >
+                            <NavLink
+                                className="side-menu__item"
+                                data-bs-toggle="slide"
+                                to="#"
 
+                            >
+                                <i className="side-menu__icon fe fe-log-out" />
+                                <span className="side-menu__label">Çıkış Yap</span>
+                            </NavLink>
+                        </li>
                     </ul>
                     <div className="slide-right" id="slide-right">
                         <svg
@@ -1242,7 +1257,7 @@ function Header(props) {
 
                     <div className="modal-header">
 
-                        <h6 className="modal-title">Choose Country</h6>
+                        <h6 className="modal-title">Dil Seç</h6>
                         <button
                             aria-label="Close"
                             className="btn-close"
@@ -1253,9 +1268,7 @@ function Header(props) {
                         </button>
                     </div>
                     <div className="modal-body">
-
                         <ul className="row p-3">
-
                             <li className="col-lg-6 mb-2">
 
                                 <a
@@ -1264,13 +1277,9 @@ function Header(props) {
                                 >
 
                                     <span className="country-selector">
-                                        <img
-                                            alt=""
-                                            src="../assets/images/flags/us_flag.jpg"
-                                            className="me-3 language"
-                                        />
+                                        <i className='flag flag-gb' />
                                     </span>
-                                    USA
+                                    English
                                 </a>
                             </li>
                             <li className="col-lg-6 mb-2">
@@ -1281,149 +1290,9 @@ function Header(props) {
                                 >
 
                                     <span className="country-selector">
-                                        <img
-                                            alt=""
-                                            src="../assets/images/flags/italy_flag.jpg"
-                                            className="me-3 language"
-                                        />
+                                        <i className='flag flag-tr' />
                                     </span>
-                                    Italy
-                                </a>
-                            </li>
-                            <li className="col-lg-6 mb-2">
-
-                                <a
-                                    href="#"
-                                    className="btn btn-country btn-lg btn-block"
-                                >
-
-                                    <span className="country-selector">
-                                        <img
-                                            alt=""
-                                            src="../assets/images/flags/spain_flag.jpg"
-                                            className="me-3 language"
-                                        />
-                                    </span>
-                                    Spain
-                                </a>
-                            </li>
-                            <li className="col-lg-6 mb-2">
-
-                                <a
-                                    href="#"
-                                    className="btn btn-country btn-lg btn-block"
-                                >
-
-                                    <span className="country-selector">
-                                        <img
-                                            alt=""
-                                            src="../assets/images/flags/india_flag.jpg"
-                                            className="me-3 language"
-                                        />
-                                    </span>
-                                    India
-                                </a>
-                            </li>
-                            <li className="col-lg-6 mb-2">
-
-                                <a
-                                    href="#"
-                                    className="btn btn-country btn-lg btn-block"
-                                >
-
-                                    <span className="country-selector">
-                                        <img
-                                            alt=""
-                                            src="../assets/images/flags/french_flag.jpg"
-                                            className="me-3 language"
-                                        />
-                                    </span>
-                                    French
-                                </a>
-                            </li>
-                            <li className="col-lg-6 mb-2">
-
-                                <a
-                                    href="#"
-                                    className="btn btn-country btn-lg btn-block"
-                                >
-
-                                    <span className="country-selector">
-                                        <img
-                                            alt=""
-                                            src="../assets/images/flags/russia_flag.jpg"
-                                            className="me-3 language"
-                                        />
-                                    </span>
-                                    Russia
-                                </a>
-                            </li>
-                            <li className="col-lg-6 mb-2">
-
-                                <a
-                                    href="#"
-                                    className="btn btn-country btn-lg btn-block"
-                                >
-
-                                    <span className="country-selector">
-                                        <img
-                                            alt=""
-                                            src="../assets/images/flags/germany_flag.jpg"
-                                            className="me-3 language"
-                                        />
-                                    </span>
-                                    Germany
-                                </a>
-                            </li>
-                            <li className="col-lg-6 mb-2">
-
-                                <a
-                                    href="#"
-                                    className="btn btn-country btn-lg btn-block"
-                                >
-
-                                    <span className="country-selector">
-                                        <img
-                                            alt=""
-                                            src="../assets/images/flags/argentina.jpg"
-                                            className="me-3 language"
-                                        />
-                                    </span>
-                                    Argentina
-                                </a>
-                            </li>
-                            <li className="col-lg-6 mb-2">
-
-                                <a
-                                    href="#"
-                                    className="btn btn-country btn-lg btn-block"
-                                >
-
-                                    <span className="country-selector">
-                                        <img
-                                            alt=""
-                                            src="../assets/images/flags/malaysia.jpg"
-                                            className="me-3 language"
-                                        />
-                                    </span>
-                                    Malaysia
-                                </a>
-                            </li>
-                            <li className="col-lg-6 mb-2">
-
-                                <a
-                                    href="#"
-                                    className="btn btn-country btn-lg btn-block"
-                                >
-
-                                    <span className="country-selector">
-                                        <img
-                                            alt=""
-                                            src="../assets/images/flags/turkey.jpg"
-                                            className="me-3 language"
-                                        />
-                                    </span>
-                                    Turkey
+                                    Türkçe
                                 </a>
                             </li>
                         </ul>

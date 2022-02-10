@@ -47,7 +47,7 @@ function Map() {
             </Geographies>
             {markers.map(({ name, coordinates, markerOffset, color }) => (
                 <Marker key={name} coordinates={coordinates}>
-                    <circle r={5} fill={color} stroke="#fff" strokeWidth={2} />
+                    <circle r={10} fill={color} stroke="#fff" strokeWidth={2} />
                     <text
                         textAnchor="middle"
                         y={markerOffset}

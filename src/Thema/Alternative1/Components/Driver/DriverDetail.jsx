@@ -163,8 +163,8 @@ function DriverDetail() {
                                 <tr>
                                     <td>1</td>
                                     <td>Adres</td>
-                                    <td>18.10.2021</td>
-                                    <td>22.10.2021</td>
+                                    <td>18.10.2021 / 18:20</td>
+                                    <td>22.10.2021 / 22:05</td>
                                     <td>
                                         <span className="tag tag-red">
                                             <i className="side-menu__icon fa fa-ban" style={{ marginTop: "6px", marginRight: "5px" }} />
@@ -174,7 +174,7 @@ function DriverDetail() {
                                     <td>
                                         <a href="/driverDetail/cargoChanges">
                                             <button id="bEdit" type="button" className="btn btn-sm btn-primary">
-                                                <span className="fe fe-edit"> </span>
+                                                <span className="fe fe-edit"> Düzenle </span>
                                             </button>
                                         </a>
 
@@ -183,8 +183,8 @@ function DriverDetail() {
                                 <tr>
                                     <td>2</td>
                                     <td>Adres</td>
-                                    <td>Tarih Gelecek</td>
-                                    <td>Tarih Gelecek</td>
+                                    <td>Tarih / Saat Gelecek</td>
+                                    <td>Tarih / Saat Gelecek</td>
                                     <td>
                                         <span className="tag tag-yellow">
                                             <i className="side-menu__icon fe fe-truck" style={{ marginTop: "6px", marginRight: "5px" }} />
@@ -194,7 +194,7 @@ function DriverDetail() {
                                     <td>
                                         <a href="/driverDetail/cargoChanges">
                                             <button id="bEdit" type="button" className="btn btn-sm btn-primary">
-                                                <span className="fe fe-edit"> </span>
+                                                <span className="fe fe-edit"> Düzenle </span>
                                             </button>
                                         </a>
 
@@ -203,8 +203,8 @@ function DriverDetail() {
                                 <tr>
                                     <td>3</td>
                                     <td>Adres</td>
-                                    <td>Tarih Gelecek</td>
-                                    <td>Tarih Gelecek</td>
+                                    <td>Tarih / Saat Gelecek</td>
+                                    <td>Tarih / Saat Gelecek</td>
                                     <td>
                                         <span className="tag tag-yellow">
                                             <i className="side-menu__icon fe fe-truck" style={{ marginTop: "6px", marginRight: "5px" }} />
@@ -214,7 +214,7 @@ function DriverDetail() {
                                     <td>
                                         <a href="/driverDetail/cargoChanges">
                                             <button id="bEdit" type="button" className="btn btn-sm btn-primary">
-                                                <span className="fe fe-edit"> </span>
+                                                <span className="fe fe-edit"> Düzenle </span>
                                             </button>
                                         </a>
 
@@ -223,8 +223,8 @@ function DriverDetail() {
                                 <tr>
                                     <td>4</td>
                                     <td>Adres</td>
-                                    <td>Tarih Gelecek</td>
-                                    <td>Tarih Gelecek</td>
+                                    <td>Tarih / Saat Gelecek</td>
+                                    <td>Tarih / Saat Gelecek</td>
                                     <td>
                                         <span className="tag tag-green">
                                             <i className="side-menu__icon fe fe-check-circle" style={{ marginTop: "6px", marginRight: "5px" }} />
@@ -234,7 +234,7 @@ function DriverDetail() {
                                     <td>
                                         <a href="/driverDetail/cargoChanges">
                                             <button id="bEdit" type="button" className="btn btn-sm btn-primary">
-                                                <span className="fe fe-edit"> </span>
+                                                <span className="fe fe-edit"> Düzenle </span>
                                             </button>
                                         </a>
 
@@ -243,8 +243,8 @@ function DriverDetail() {
                                 <tr>
                                     <td>5</td>
                                     <td>Adres</td>
-                                    <td>Tarih Gelecek</td>
-                                    <td>Tarih Gelecek</td>
+                                    <td>Tarih / Saat Gelecek</td>
+                                    <td>Tarih / Saat Gelecek</td>
                                     <td>
                                         <span className="tag tag-green">
                                             <i className="side-menu__icon fe fe-check-circle" style={{ marginTop: "6px", marginRight: "5px" }} />
@@ -254,7 +254,7 @@ function DriverDetail() {
                                     <td>
                                         <a href="/driverDetail/cargoChanges">
                                             <button id="bEdit" type="button" className="btn btn-sm btn-primary">
-                                                <span className="fe fe-edit"> </span>
+                                                <span className="fe fe-edit"> Düzenle </span>
                                             </button>
                                         </a>
 

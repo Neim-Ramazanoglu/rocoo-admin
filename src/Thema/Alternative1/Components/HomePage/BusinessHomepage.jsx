@@ -372,7 +372,7 @@ function BusinessHomepage() {
             </div>
         </div>
 
-        <div className="card" style={{ maxHeight: "400px" }}>
+        <div className="card" style={{ maxHeight: "500px" }}>
             <div className="card-header">
                 <h3 className="card-title">Kargolar</h3>
             </div>

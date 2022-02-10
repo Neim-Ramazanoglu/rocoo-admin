@@ -144,7 +144,7 @@ function BusinessProfile() {
         <div className="row ">
             <div className="card">
                 <div className="card-header">
-                    <h3 className="card-title">Kargolar</h3>
+                    <h3 className="card-title">Sürücüler</h3>
                 </div>
                 <div className="card-body">
                     <div className="table-responsive">
@@ -152,8 +152,8 @@ function BusinessProfile() {
                             <thead>
                                 <tr>
                                     <th>Sürücü</th>
-                                    <th>Paket Alım</th>
-                                    <th>Paket Teslim</th>
+                                    <th>Bölge</th>
+                                    <th>Telefon</th>
                                     <th>Durum</th>
                                     <th>İşlem</th>
                                 </tr>
@@ -161,12 +161,12 @@ function BusinessProfile() {
                             <tbody>
                                 <tr>
                                     <td>Joan Powell</td>
-                                    <td>18.10.2021</td>
-                                    <td>22.10.2021</td>
+                                    <td>Bölge numarası</td>
+                                    <td>Telefon</td>
                                     <td>
-                                        <span className="tag tag-red">
-                                            <i className="side-menu__icon fa fa-ban" style={{ marginTop: "6px", marginRight: "5px" }} />
-                                            Teslim Edilmedi
+                                        <span className="tag tag-green">
+                                            <i className="side-menu__icon fe fe-check-circle" style={{ marginTop: "6px", marginRight: "5px" }} />
+                                            Tamamlandı
                                         </span>
                                     </td>
                                     <td>
@@ -180,12 +180,12 @@ function BusinessProfile() {
                                 </tr>
                                 <tr>
                                     <td>Gavin Gibson</td>
-                                    <td>Tarih Gelecek</td>
-                                    <td>Tarih Gelecek</td>
+                                    <td>Bölge numarası</td>
+                                    <td>Telefon</td>
                                     <td>
                                         <span className="tag tag-yellow">
                                             <i className="side-menu__icon fe fe-truck" style={{ marginTop: "6px", marginRight: "5px" }} />
-                                            Yolda
+                                            Teslimatta
                                         </span>
                                     </td>
                                     <td>
@@ -199,12 +199,12 @@ function BusinessProfile() {
                                 </tr>
                                 <tr>
                                     <td>Julian Kerr</td>
-                                    <td>Tarih Gelecek</td>
-                                    <td>Tarih Gelecek</td>
+                                    <td>Bölge numarası</td>
+                                    <td>Telefon</td>
                                     <td>
                                         <span className="tag tag-yellow">
                                             <i className="side-menu__icon fe fe-truck" style={{ marginTop: "6px", marginRight: "5px" }} />
-                                            Yolda
+                                            Teslimatta
                                         </span>
                                     </td>
                                     <td>
@@ -218,12 +218,12 @@ function BusinessProfile() {
                                 </tr>
                                 <tr>
                                     <td>Cedric Kelly</td>
-                                    <td>Tarih Gelecek</td>
-                                    <td>Tarih Gelecek</td>
+                                    <td>Bölge numarası</td>
+                                    <td>Telefon</td>
                                     <td>
                                         <span className="tag tag-green">
                                             <i className="side-menu__icon fe fe-check-circle" style={{ marginTop: "6px", marginRight: "5px" }} />
-                                            Teslim Edildi
+                                            Tamamlandı
                                         </span>
                                     </td>
                                     <td>
@@ -237,12 +237,12 @@ function BusinessProfile() {
                                 </tr>
                                 <tr>
                                     <td>Samantha May</td>
-                                    <td>Tarih Gelecek</td>
-                                    <td>Tarih Gelecek</td>
+                                    <td>Bölge numarası</td>
+                                    <td>Telefon</td>
                                     <td>
                                         <span className="tag tag-green">
                                             <i className="side-menu__icon fe fe-check-circle" style={{ marginTop: "6px", marginRight: "5px" }} />
-                                            Teslim Edildi
+                                            Tamamlandı
                                         </span>
                                     </td>
                                     <td>

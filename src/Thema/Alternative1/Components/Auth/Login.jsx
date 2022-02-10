@@ -12,7 +12,7 @@ function Login() {
                                     src={require("../../Assets/images/brand/RooCoLogo.png")}
                                     className="header-brand-img"
                                     alt=""
-                                    style={{ maxHeight: "50px" }}
+                                    style={{ maxHeight: "65px" }}
                                 />
                             </div>
                         </div>

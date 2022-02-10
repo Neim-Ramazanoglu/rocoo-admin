@@ -18,6 +18,7 @@ function Register() {
                                     style={{ maxHeight: "50px" }}
                                 />
                             </div>
+                            <div className='h4 text-center mt-5' >RoCoo'ya Hoşgeldin</div>
                         </div>
                         <div className="container-login100">
                             <div className="wrap-login100 p-6">

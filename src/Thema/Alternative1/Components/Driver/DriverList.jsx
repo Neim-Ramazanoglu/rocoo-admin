@@ -13,7 +13,7 @@ function DriverList() {
             <div className="col-lg-12">
                 <div className="card">
                     <div className="card-body">
-                        <button type="button" onClick={() => { history.push("/drivers/insert") }} className="btn btn-warning offset-10 mb-5">
+                        <button type="button" onClick={() => { history.push("/driverDetail") }} className="btn btn-warning offset-10 mb-5">
                             <i className="fe fe-user-plus me-2" />Sürücü Ekle
                         </button>
                         <div className="table-responsive">
@@ -28,7 +28,7 @@ function DriverList() {
                                     </tr>
                                 </thead>
                                 <tbody >
-                                    <tr >
+                                    <tr onClick={() => { history.push("/drivers/insert") }} style={{ cursor: "pointer" }}>
                                         <td>1</td>
                                         <td>
                                             <div >
@@ -92,7 +92,7 @@ function DriverList() {
             </div>
         </div>
 
-    </div>;
+    </div >;
 }
 
 export default DriverList;

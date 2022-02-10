@@ -38,7 +38,7 @@ function DriverInsert() {
                                                 (state === "3" ?
                                                     <div style={{ color: "#ffcc00" }}>
                                                         <i className="fe fe-check-square" style={{ fontSize: "24px" }} /><br />
-                                                        Adres Bilgileri
+                                                        Kişisel Bilgiler
                                                     </div>
                                                     :
                                                     <div>
@@ -189,7 +189,7 @@ function DriverInsert() {
                                                             type="text"
                                                             className="form-control form-control-solid form-control-lg"
                                                             name="address"
-                                                            placeholder="İsminizi giriniz"
+                                                            placeholder="Mail adresinizi giriniz"
                                                         />
                                                         <span className="form-text text-muted" />
                                                         <div className="fv-plugins-message-container" />
@@ -202,7 +202,7 @@ function DriverInsert() {
                                                             type="text"
                                                             className="form-control form-control-solid form-control-lg"
                                                             name="address"
-                                                            placeholder="İsminizi giriniz"
+                                                            placeholder="Şifrenizi giriniz"
                                                         />
                                                         <span className="form-text text-muted" />
                                                         <div className="fv-plugins-message-container" />
@@ -217,7 +217,7 @@ function DriverInsert() {
                                                             type="text"
                                                             className="form-control form-control-solid form-control-lg"
                                                             name="address"
-                                                            placeholder="İsminizi giriniz"
+                                                            placeholder="Telefon numaranızı giriniz"
                                                         />
                                                         <span className="form-text text-muted" />
                                                         <div className="fv-plugins-message-container" />
@@ -230,7 +230,35 @@ function DriverInsert() {
                                                             type="text"
                                                             className="form-control form-control-solid form-control-lg"
                                                             name="address"
-                                                            placeholder="İsminizi giriniz"
+                                                            placeholder="Yedek Telefon numaranızı giriniz"
+                                                        />
+                                                        <span className="form-text text-muted" />
+                                                        <div className="fv-plugins-message-container" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='row mt-5'>
+                                                <div className='col-lg-6'>
+                                                    <div className="form-group fv-plugins-icon-container has-success">
+                                                        <label>Ehliyet Numarası</label>
+                                                        <input
+                                                            type="text"
+                                                            className="form-control form-control-solid form-control-lg"
+                                                            name="address"
+                                                            placeholder="Ehliyet numaranızı giriniz"
+                                                        />
+                                                        <span className="form-text text-muted" />
+                                                        <div className="fv-plugins-message-container" />
+                                                    </div>
+                                                </div>
+                                                <div className='col-lg-6'>
+                                                    <div className="form-group fv-plugins-icon-container has-success">
+                                                        <label>Kimlik Numarası</label>
+                                                        <input
+                                                            type="text"
+                                                            className="form-control form-control-solid form-control-lg"
+                                                            name="address"
+                                                            placeholder="Kimlik numaranızı giriniz"
                                                         />
                                                         <span className="form-text text-muted" />
                                                         <div className="fv-plugins-message-container" />
